@@ -2,7 +2,7 @@
 
 let options ={
     enableHighAccuracy: true,
-    timeout: 5000,
+    timeout: 10000,
     maximumAge: 0
 }
 
@@ -35,11 +35,12 @@ function success(position){
     
 }
 
-function error(){
+function error(error){
     let map = L.map('map').setView([41.655760, -0.910178], 14);  
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'By David Rodriguez © OpenStreetMap contributors'
     }).addTo(map);
+    console.log(error.code, error.message);
 }
 
