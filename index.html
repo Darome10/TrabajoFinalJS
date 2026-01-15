@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Rodriguez</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logoLink"><img src="./assets/logo.jpg" alt="logo" width="50" height="80" class="logo"></a>
+        <nav class="navbar">
+            <a href="#" class= "current">Inicio</a>
+            <a href="/views/galeria.html">Galería</a>
+            <a href="/views/presupuesto.html">Presupuesto</a>
+            <a href="/views/contacto.html">Contacto</a>
+        </nav>
+    </header>   
+    <main>
+        <section class="section">
+            <h2>Sobre mí</h2>
+            <div class="presentacion-container">  
+                <img class="img-intro" src="./assets/foto.jpg" alt="Foto de David Rodriguez" width="500" height="600">
+                <h3>David Rodríguez - Estudiante desarrollo web</h3>
+                <p>Soy un estudiante de desarrollo web apasionado por las nuevas tecnologías y los ordenadores. Oriento mi aprendizaje hacia la inteligencia artificial y la ciberseguridad, aunque considero el desarrollo web como una manera óptima de introducirme en el mundo del código. </p>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Noticias</h2>
+            <div class="noticias" id="noticiasDiv">
+                <!-- Las noticias se cargarán aquí mediante JavaScript -->
+            </div>
+        </section>
+        <section class="section">
+            <h2>Tecnologías manejadas</h2>
+            <div class="tecnologias">
+                <div class="tecnologia">
+                    <img src="./assets/html-5-svgrepo-com.svg" alt="HTML5 Logo" width="100" height="100" draggable="false">
+                    <p>HTML5</p>
+                </div>
+                <div class="tecnologia">
+                    <img src="./assets/css-3-svgrepo-com.svg" alt="CSS3 Logo" width="100" height="100" draggable="false">
+                    <p>CSS3</p>
+                </div>
+                <div class="tecnologia">
+                    <img src="./assets/javascript-svgrepo-com.svg" alt="JavaScript Logo" width="100" height="100" draggable="false">
+                    <p>JavaScript</p>
+                </div>
+                <div class="tecnologia">
+                    <img src="./assets/python-svgrepo-com.svg" alt="Python Logo" width="100" height="100" draggable="false">
+                    <p>Python</p>
+                </div>
+                <div class="tecnologia">
+                    <img src="./assets/mysql-svgrepo-com.svg" alt="MySQL Logo" width="100" height="100" draggable="false">
+                    <p>MySQL</p>
+                </div>
+                <div class="tecnologia">
+                    <img src="./assets/php-svgrepo-com.svg" alt="PHP Logo" width="100" height="100" draggable="false">
+                    <p>PHP</p>
+                </div>
+                <div class="tecnologia">
+                    <img src="./assets/typescript-svgrepo-com.svg" alt="TypeScript Logo" width="100" height="100" draggable="false">
+                    <p>TypeScript</p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h2>Futuros proyectos</h2>
+            <div class="carousel-container">
+                <button class="prev-btn" id="prev-btn">←</button>
+                <div class="carousel" id="carousel">
+                    <div class="caja inactive"></div>
+                    <div class="caja active"></div>
+                    <div class="caja inactive"></div>
+                </div>
+                <button class="next-btn" id="next-btn">→</button>
+            </div>
+            <div class="descripcion-container" id="descripcion-container"></div>
+        </section>
+    </main>
+    <footer>
+        <p>2025. David Rodriguez. Todos los derechos reservados.</p>
+        <ul class="social-media">
+            <li><a href="https://www.github.com" target="_blank"><img src="./assets/github-142-svgrepo-com.svg" alt="Github logo" title="Github"></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><img src="./assets/instagram-svgrepo-com.svg" alt="Instagram logo" title="Instagram"></a></li>
+            <li><a href="https://www.linkedin.com/in/" target="_blank"><img src="./assets/linkedin-svgrepo-com.svg" alt="LinkedIn logo" title="LinkedIn"></a></li>
+        </ul>     
+    </footer>
+    <script src ="./js/index.js"></script>
+</body>
+</html>

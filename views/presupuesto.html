@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Rodriguez</title>
+    <link rel="stylesheet" href="./../css/styles.css">
+</head>
+<body class="body-budget">
+    <header>
+        <a href="../index.html" class="logoLink"><img src="./../assets/logo.jpg" alt="logo" width="50" height="80" class="logo"></a>
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="/views/galeria.html">Galería</a>
+            <a href="#" class="current">Presupuesto</a>
+            <a href="/views/contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <main class="budgetBody">
+        <h1>Formulario de solicitud</h1>
+        <form action="#" method="post" class="form-budget" id="form">
+            <div class="fieldset-form">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <div class="input-budget">
+                        <label for="name">Nombre completo </label>
+                        <input type="text" id="name" name="name" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="input-budget">
+                        <label for="phone">Teléfono de contacto </label>
+                        <input type="tel" id="phone" name="phone" placeholder="Teléfono de contacto" required>
+                    </div>
+                    <div class="input-budget">
+                        <label for="email">Correo electrónico </label>
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="fieldset-form">
+                <fieldset>
+                    <legend> Presupuesto</legend>
+                    <div class = "inputs">   
+                        <div class="input-budget">
+                            <label for="products">Producto </label>
+                            <select id="products" name="products">
+                                <option value="" disabled selected>-- Selecciona un producto --</option>
+                                <option class="product" value="SitioWeb:1000">Sitio web</option>
+                                <option class="product"  value="AplicacionesWeb:1500">Aplicaciones móviles</option>
+                                <option  class="product" value="Ciberseguridad:2000">Ciberseguridad</option>
+                                <option  class="product" value="IA:2300">Implementación de redes neuronales</option>
+                                <option  class="product" value="Linux:1000">Configuración entornos Linux</option>
+                            </select>
+                        </div>
+                        <div class="input-budget">
+                            <label for="plazo">Plazo </label>
+                            <input type="number" id="plazo" name="plazo" placeholder="Número de semanas">
+                        </div>
+                        <div class="input-budget extras-container">
+                            <p class="extras">Extras</p>
+                            <div class="extras">
+                                <div class="checkboxes">
+                                    <label for="tipografia">Tipografía personalizada</label>
+                                    <input type="checkbox" id="tipografia" name="tipografia" value="Tipografía personalizada: 50">
+                                </div>
+                                <div class="checkboxes">
+                                    <label for="bd">Incluir base de datos</label>
+                                    <input type="checkbox" id="bd" name="bd" value="Incluir base de datos: 200">
+                                </div>
+                                <div class="checkboxes">
+                                    <label for="color">Color personalizado</label>
+                                    <input type="checkbox" id="color" name="color" value="Color personalizado: 30">
+                                </div>
+                                <div class="checkboxes">
+                                    <label for="ia">Incluir asistente de IA</label>    
+                                    <input type="checkbox" id="ia" name="ia" value="Asistente de IA: 300">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-budget">
+                                <label for="estimado">Presupuesto estimado </label>
+                                <input type="text" id="estimado" name="estimado" placeholder="Presupuesto estimado" disabled>
+                        </div>
+                    </div> 
+                </fieldset>
+            </div>
+            <div class="fieldset-form"><fieldset>
+                <legend>Términos y condiciones</legend>
+                <div class="input-budget">
+                    <label for="terminos">Acepto términos y condiciones</label>    
+                    <input type="checkbox" id="terminos" name="terminos" value="termnos" required>
+                </div>
+                <button type="submit" id="submit" class="btn-submit">Enviar solicitud</button>
+            </fieldset>
+            </div> 
+        </form>
+    </main>
+    <footer>
+        <p>2025. David Rodriguez. Todos los derechos reservados.</p>
+        <ul class="social-media">
+            <li><a href="https://www.github.com" target="_blank"><img src="./../assets/github-142-svgrepo-com.svg" alt="Github logo" title="Github"></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><img src="./../assets/instagram-svgrepo-com.svg" alt="Instagram logo" title="Instagram"></a></li>
+            <li><a href="https://www.linkedin.com/in/" target="_blank"><img src="./../assets/linkedin-svgrepo-com.svg" alt="LinkedIn logo" title="LinkedIn"></a></li>
+        </ul>     
+    </footer>
+    <script src ="../js/budget.js"></script>
+</body>
+</html>

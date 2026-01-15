@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Rodriguez</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css">
+    <link rel="stylesheet" href="./../css/styles.css">
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logoLink"><img src="./../assets/logo.jpg" alt="logo" width="50" height="80" class="logo"></a>
+        <nav class="navbar">
+            <a href="../index.html">Inicio</a>
+            <a href="/views/galeria.html">Galería</a>
+            <a href="/views/presupuesto.html">Presupuesto</a>
+            <a href="#" class="current">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-container">
+            <div class="map" id="map"></div>
+            <div class="informacion-container">
+                <h2>Contacto</h2>
+                <p>Si deseas ponerte en contacto conmigo, puedes hacerlo a través de los siguientes medios:</p>
+                <ul>
+                    <li>Email: darome10@hotmail.com</li>
+                    <li>Teléfono: +34 614 66 66 66</li>
+                    <li>Dirección: Avenida de Navarra 93, Zaragoza, España.</li>
+                </ul>
+            </div>
+        </section> 
+    </main>
+    <footer>
+        <p>2025. David Rodriguez. Todos los derechos reservados.</p>
+        <ul class="social-media">
+            <li><a href="https://www.github.com" target="_blank"><img src="./../assets/github-142-svgrepo-com.svg" alt="Github logo" title="Github"></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><img src="./../assets/instagram-svgrepo-com.svg" alt="Instagram logo" title="Instagram"></a></li>
+            <li><a href="https://www.linkedin.com/in/" target="_blank"><img src="./../assets/linkedin-svgrepo-com.svg" alt="LinkedIn logo" title="LinkedIn"></a></li>
+        </ul>     
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src ="./../js/contact.js"></script>
+</body>
+</html>
